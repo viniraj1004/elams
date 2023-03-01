@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>leavePortal</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/leave.css" rel="stylesheet">
+
+<body>
+
+    <nav class="navbar navbar-light bg-light fixed-top border-bot">
+        <div class="container-fluid">
+            <a class="text-decoration1" href="/homePage">
+                <span class="navbar-brand text-size3 font-family2 letter-space2 font-color3">ELAMS</span>
+            </a>
+            <a class="navbar-brand" href="#" data-bs-toggle="dropdown">
+                <img src="images/icon.svg" alt="User" width="30" height="24" class="d-inline-block align-self-center">
+                <span class="tex-size1">Vinitha Pallala</span>
+                <img src="icons/dropDown.svg" alt="Drop Down" width="20" height="20">
+            </a>
+            <div class=" dropdown2 dropdown-menu">
+                <a href="/logout" class="dropdown-item"><span>logout</span></a>
+            </div>
+        </div>
+    </nav>
+    <div class=" main">
+        <div class="sidebar width-sidebar">
+            <ul>
+                <li><a href="#" class="active bag-color5"><span class="tex-dark">User Activities</span></a></li>
+                <li><a href="/attendance"><span>Attendance</span></a></li>
+                <li><a href="/reports"><span>My Attendance Reports</span></a></li>
+                <li><a href="/holidayCalendar"><span>Holiday Calendar</span></a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        <span>Leaves</span>
+                        <span class="padd-right4"></span>
+                        <img src="icons/dropDown.svg" alt="Drop Down" width="20" height="20">
+                    </a>
+                    <div class=" dropdown1 dropdown-menu">
+                        <a href="/leaveApply" class="dropdown-item"><span class="padd-right4">Apply For Leave</span></a>
+                        <a href="/leaveHistory" class="dropdown-item"><span>Leave History</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="gutterRemove row bottom-marg-pad">
+                <div class="col-12">
+                    <div class="card marg-left-right-top4 form-control box-shadow2 box">
+                        <div class="card-body">
+                            <h4 class="card-title text-align1 text-color2 text-shadow1">Employee Details</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="padding-lef col-md-4">
+                                <p>Employee Name: Vinitha Pallala</p>
+                                <p>Manager Name: Rajasekar Pallala</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Designation: Software Engineer</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Department: Engineering-Information Technology</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card marg-left-right-top4 form-control box-shadow2 box">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 class=" card-title text-align1 text-color2 text-shadow1 text-align1">
+                                        Leave Application</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <form class="form-horizontal" role="form" method="leaveApply()"></form>
+                            <div class="row">
+                                <div class="col-12">
+                                    <ins>
+                                        <h5 class="font-weight1">LEAVE BALANCE 2023</h5>
+                                    </ins>
+                                </div>
+                                <div class="col-6">
+                                    <div class="margin-top8">
+                                        <p>Earned Leave Balance Available: 32</p>
+                                        <p>Casual Leave Balance Available: 10</p>
+                                        <div class="col-md-6 margin-top8">
+                                            <label for="inputtext" class="form-label">Leave Type</label>
+                                            <select id="inputtext" class="form-select"
+                                                style="border: 1px solid #51006c">
+                                                <option> </option>
+                                                <option>Sick Leave</option>
+                                                <option>Casual Leave</option>
+                                                <option>Earned Leave</option>
+                                                <option>Loss of Pay</option>
+                                                <option>Bereavement Leave</option>
+                                                <option>Compensatory Off</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 margin-top8">
+                                            <label for="textarea" class="form-label">Leave
+                                                Reason</label>
+                                            <textarea class="form-control" id="textarea"
+                                                placeholder="Specify your leave reason" required></textarea>
+                                            <input type="Date" class="form-control margin-top8" id="inputDate2"
+                                                placeholder="From Date">
+
+                                            <label for="exampleInputContact1" class="form-label margin-top8">Contact
+                                                Number</label>
+                                            <input type="Contact Number" class="form-control" id="exampleInputContact1"
+                                                aria-describedby="contactlHelp">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row margin-top8 bottom-marg-pad">
+                                        <p>Sick Leave Balance Available: 11</p>
+                                        <p>Shift: Monday - Friday</p>
+                                        <div class="col-md-6 margin-top8 marg-padd-top8">
+                                            <label for="inputtext" class="form-label">Location</label>
+                                            <select id="inputtext" class="form-select"
+                                                style="border: 1px solid #51006c">
+                                                <option>HYDERABAD</option>
+                                                <option>BENGALURU</option>
+                                                <option>BHUBANESWAR</option>
+                                            </select>
+                                            <input type="Date" class="form-control marg-top9" id="inputDate2"
+                                                placeholder="From Date">
+                                            <p class="marg-padd-top9">Duration: 0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-transparent top-margin7 padd-right4 border-footer">
+                                <button type="button"
+                                    class="btn btn-light btn-lg right-float marg-right5 btn-bg-color btn-text-color"
+                                    style="padding: 10px 45px 10px 45px;">SUBMIT</button>
+                                <button type="button" class="btn btn-light btn-lg right-float marg-right5 box"
+                                    style="padding: 10px 45px 10px 45px;">CLEAR</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=" js/popper.min.js">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

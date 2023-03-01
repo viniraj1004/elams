@@ -1,0 +1,160 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>leavePortal</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/leave.css" rel="stylesheet">
+
+<body>
+
+    <nav class="navbar navbar-light bg-light fixed-top border-bot">
+        <div class="container-fluid">
+            <a class="text-decoration1" href="/homePage">
+                <span class="navbar-brand text-size3 font-family2 letter-space2 font-color3">ELAMS</span>
+            </a>
+            <a class="navbar-brand" href="#" data-bs-toggle="dropdown">
+                <img src="images/icon.svg" alt="User" width="30" height="24" class="d-inline-block align-self-center">
+                <span class="tex-size1">Vinitha Pallala</span>
+                <img src="icons/dropDown.svg" alt="Drop Down" width="20" height="20">
+            </a>
+            <div class=" dropdown2 dropdown-menu">
+                <a href="/logout" class="dropdown-item"><span>logout</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="sidebar width-sidebar">
+            <ul>
+                <li><a href="#" class="active bag-color5"><span class="tex-dark">User Activities</span></a></li>
+                <li><a href="/attendance"><span>Attendance</span></a></li>
+                <li><a href="/reports"><span>My Attendance Reports</span></a></li>
+                <li><a href="/holidayCalendar"><span>Holiday Calendar</span></a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        <span>Leaves</span>
+                        <span class="padd-right4"></span>
+                        <img src="icons/dropDown.svg" alt="Drop Down" width="20" height="20">
+                    </a>
+                    <div class=" dropdown1 dropdown-menu">
+                        <a href="/leaveApply" class="dropdown-item"><span class="padd-right4">Apply For Leave</span></a>
+                        <a href="/leaveHistory" class="dropdown-item"><span>Leave History</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class=" gutterRemove row bottom-marg-pad">
+                <div class="col-12">
+                    <div class="card marg-left-right-top4 form-control box-shadow2 box">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h4 class=" card-title text-align1 text-color2 text-shadow1 attendance-float">
+                                        Attendance Reports</h4>
+                                </div>
+                                <div class="col-5">
+                                    <img src="icons/download.svg" alt="Download Icon" width="16px" height="16px"
+                                        class="icon-float">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input type="Date" class="form-control" id="inputDate2" placeholder="From Date">
+                                </div>
+                                <div class="col-md-3">
+                                    <!--<label for="inputDate2" class="visually-hidden">From Date <span><img
+                                                src="icons/calendar.svg" alt="Calendar" width="16px"
+                                                height="16px"></span></label>-->
+                                    <input type="Date" class="form-control" id="inputDate2" placeholder="To Date">
+                                </div>
+                                <div class="col-md-1 btn-left-marg">
+                                    <button type="button" class="btn btn-success btn-radius btn-color1">FILTER</button>
+                                </div>
+                                <div class="col-md-1 btn-left-marg">
+                                    <button type="button" class="btn btn-light btn-radius box">CLEAR</button>
+                                </div>
+                            </div>
+                            <div class="row table-top-margin card-3">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Attendance Type</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Network Type</th>
+                                            <th scope="col">Shift Type</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Pallala Rajasekhar</td>
+                                            <td>Work From Home</td>
+                                            <td>Feb 12, 2023</td>
+                                            <td>Borabanda</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pallala Rajasekhar</td>
+                                            <td>Work From Home</td>
+                                            <td>Feb 10, 2023</td>
+                                            <td>Borabanda</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pallala Rajasekhar</td>
+                                            <td>Work From Home</td>
+                                            <td>Feb 9, 2023</td>
+                                            <td>Borabanda</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pallala Rajasekhar</td>
+                                            <td>Work From Home</td>
+                                            <td>Feb 8, 2023</td>
+                                            <td>Borabanda</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pallala Rajasekhar</td>
+                                            <td>Work From Home</td>
+                                            <td>Feb 7, 2023</td>
+                                            <td>Borabanda</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pallala Rajasekhar</td>
+                                            <td>Work From Home</td>
+                                            <td>Feb 6, 2023</td>
+                                            <td>Borabanda</td>
+                                            <td>General</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pallala Rajasekhar</td>
+                                            <td>Work From Home</td>
+                                            <td>Feb 5, 2023</td>
+                                            <td>Borabanda</td>
+                                            <td>General</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=" js/popper.min.js">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,601 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>leavePortal</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/leave.css" rel="stylesheet">
+
+<body>
+
+    <nav class="navbar navbar-light bg-light fixed-top border-bot">
+        <div class="container-fluid">
+
+            <a class="text-decoration1" href="/homePage">
+                <span class="navbar-brand text-size3 font-family2 letter-space2 font-color3">ELAMS</span>
+            </a>
+            <a class="navbar-brand" href="#" data-bs-toggle="dropdown">
+                <img src="images/icon.svg" alt="User" width="30" height="24" class="d-inline-block align-self-center">
+                <span class="tex-size1">Vinitha Pallala</span>
+                <img src="icons/dropDown.svg" alt="Drop Down" width="20" height="20">
+            </a>
+            <div class=" dropdown2 dropdown-menu">
+                <a href="/logout" class="dropdown-item"><span>logout</span></a>
+            </div>
+        </div>
+    </nav>
+    <div class=" main">
+        <div class="sidebar width-sidebar">
+            <ul>
+                <li><a href="#" class="active bag-color5"><span class="tex-dark">User Activities</span></a></li>
+                <li><a href="/attendance"><span>Attendance</span></a></li>
+                <li><a href="/reports"><span>My Attendance Reports</span></a></li>
+                <li><a href="/holidayCalendar"><span>Holiday Calendar</span></a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        <span>Leaves</span>
+                        <span class="padd-right4"></span>
+                        <img src="icons/dropDown.svg" alt="Drop Down" width="20" height="20">
+                    </a>
+                    <div class=" dropdown1 dropdown-menu">
+                        <a href="/leaveApply" class="dropdown-item"><span class="padd-right4">Apply For Leave</span></a>
+                        <a href="/leaveHistory" class="dropdown-item"><span>Leave History</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="gutterRemove row">
+                <div class="col-12">
+                    <div class="card marg-left-right-top4 form-control box-shadow2 box">
+                        <div class="card-body">
+                            <h4 class="card-title text-align1 text-color2 text-shadow1">Employee Details</h4>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="padding-lef col-md-4">
+                                <p>Employee Name: Vinitha Pallala</p>
+                                <p>Manager Name: Rajasekar Pallala</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Designation: Software Engineer</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Department: Engineering-Information Technology</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 marg-pad-bottom2">
+                    <div class="card marg-left-right-top4 form-control box">
+                        <div class="card-body">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="box accordion-item bottom-margin1">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Sunday, February 19, 2023
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body padding" style="padding-top: 25px">
+                                            <div class="row left-pad">
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Logout Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Work Location</option>
+                                                        <option value="1">Hyderabad</option>
+                                                        <option value="2">Bengaluru</option>
+                                                        <option value="3">Chennai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Network Type</option>
+                                                        <option value="1">Internet</option>
+                                                        <option value="2">Mobile Data</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 top-pad">
+                                                    Delivery Impact
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 pa-top">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="top-pad1 left-pad">
+                                                <button type="button"
+                                                    class="btn btn-secondary btn-color btn-border-color btn-radius btn-text-color">Submit
+                                                    Attendance</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box accordion-item bottom-margin1">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Monday, February 20, 2023
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body padding" style="padding-top: 25px">
+                                            <div class="row left-pad">
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Work Location</option>
+                                                        <option value="1">Hyderabad</option>
+                                                        <option value="2">Bengaluru</option>
+                                                        <option value="3">Chennai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Network Type</option>
+                                                        <option value="1">Internet</option>
+                                                        <option value="2">Mobile Data</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 top-pad">
+                                                    Delivery Impact
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 pa-top">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="top-pad1 left-pad">
+                                                <button type="button"
+                                                    class="btn btn-secondary btn-color btn-border-color btn-radius btn-text-color">Submit
+                                                    Attendance</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box accordion-item bottom-margin1">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Tuesday, February 21, 2023
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body padding" style="padding-top: 25px">
+                                            <div class="row left-pad">
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Work Location</option>
+                                                        <option value="1">Hyderabad</option>
+                                                        <option value="2">Bengaluru</option>
+                                                        <option value="3">Chennai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Network Type</option>
+                                                        <option value="1">Internet</option>
+                                                        <option value="2">Mobile Data</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 top-pad">
+                                                    Delivery Impact
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 pa-top">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="top-pad1 left-pad">
+                                                <button type="button"
+                                                    class="btn btn-secondary btn-color btn-border-color btn-radius btn-text-color">Submit
+                                                    Attendance</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box accordion-item bottom-margin1">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour">
+                                            Wednesday, February 22, 2023
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body padding" style="padding-top: 25px">
+                                            <div class="row left-pad">
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Work Location</option>
+                                                        <option value="1">Hyderabad</option>
+                                                        <option value="2">Bengaluru</option>
+                                                        <option value="3">Chennai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Network Type</option>
+                                                        <option value="1">Internet</option>
+                                                        <option value="2">Mobile Data</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 top-pad">
+                                                    Delivery Impact
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 pa-top">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="top-pad1 left-pad">
+                                                <button type="button"
+                                                    class="btn btn-secondary btn-color btn-border-color btn-radius btn-text-color">Submit
+                                                    Attendance</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box accordion-item bottom-margin1">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                            aria-expanded="false" aria-controls="flush-collapseFive">
+                                            Thursday, February 23, 2023
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body padding" style="padding-top: 25px">
+                                            <div class="row left-pad">
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Work Location</option>
+                                                        <option value="1">Hyderabad</option>
+                                                        <option value="2">Bengaluru</option>
+                                                        <option value="3">Chennai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Network Type</option>
+                                                        <option value="1">Internet</option>
+                                                        <option value="2">Mobile Data</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 top-pad">
+                                                    Delivery Impact
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 pa-top">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="top-pad1 left-pad">
+                                                <button type="button"
+                                                    class="btn btn-secondary btn-color btn-border-color btn-radius btn-text-color">Submit
+                                                    Attendance</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box accordion-item bottom-margin1">
+                                    <h2 class="accordion-header" id="flush-headingSix">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                            aria-expanded="false" aria-controls="flush-collapseSix">
+                                            Friday, February 24, 2023
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body padding" style="padding-top: 25px">
+                                            <div class="row left-pad">
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Work Location</option>
+                                                        <option value="1">Hyderabad</option>
+                                                        <option value="2">Bengaluru</option>
+                                                        <option value="3">Chennai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Network Type</option>
+                                                        <option value="1">Internet</option>
+                                                        <option value="2">Mobile Data</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 top-pad">
+                                                    Delivery Impact
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 pa-top">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="top-pad1 left-pad">
+                                                <button type="button"
+                                                    class="btn btn-secondary btn-color btn-border-color btn-radius btn-text-color">Submit
+                                                    Attendance</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box accordion-item bottom-margin1">
+                                    <h2 class="accordion-header" id="flush-headingSeven">
+                                        <button class="accordion-button collapsed bg-light" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                            aria-expanded="false" aria-controls="flush-collapseSeven">
+                                            Saturday, February 25, 2023
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body padding" style="padding-top: 25px">
+                                            <div class="row left-pad">
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputHours" class="form-label">Login Hours</label>
+                                                    <select id="inputHours" class="form-select">
+                                                        <option selected>00</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Work Location</option>
+                                                        <option value="1">Hyderabad</option>
+                                                        <option value="2">Bengaluru</option>
+                                                        <option value="3">Chennai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-4 top-pad">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Network Type</option>
+                                                        <option value="1">Internet</option>
+                                                        <option value="2">Mobile Data</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 top-pad">
+                                                    Delivery Impact
+                                                </div>
+                                            </div>
+                                            <div class="row left-pad">
+                                                <div class="col-6 pa-top">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="top-pad1 left-pad">
+                                                <button type="button"
+                                                    class="btn btn-secondary btn-color btn-border-color btn-radius btn-text-color">Submit
+                                                    Attendance</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src=" js/popper.min.js">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
