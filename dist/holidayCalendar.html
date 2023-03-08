@@ -7,6 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/leave.css" rel="stylesheet">
+</head>
 
 <body>
 
@@ -82,136 +83,20 @@
                             </div>
                             <hr>
                             <div class="row table-top-margin card-3">
-                                <table class="table table-striped">
+                                <table class="table table-bordered table-striped table-hover">
                                     <thead>
                                         <tr>
-                                            <th scope="col">S.NO</th>
-                                            <th scope="col">Occasion</th>
-                                            <th scope="col">Holiday Date</th>
-                                            <th scope="col">Day</th>
-                                            <th scope="col">Hyderabad</th>
-                                            <th scope="col">Bengaluru</th>
-                                            <th scope="col">Bhubaneswar</th>
+                                            <th>S.NO</th>
+                                            <th>Occasion</th>
+                                            <th>Holiday Date</th>
+                                            <th>Day</th>
+                                            <th>Hyderabad</th>
+                                            <th>Bengaluru</th>
+                                            <th>Bhubaneswar</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Republic Day</td>
-                                            <td>Jan 26,2023</td>
-                                            <td>Thursday</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Ugadi</td>
-                                            <td>Mar 22,2023</td>
-                                            <td>Wednesday</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>May Day</td>
-                                            <td>May 1,2023</td>
-                                            <td>Monday</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Telangana Formation Day</td>
-                                            <td>Jun 2,2023</td>
-                                            <td>Friday</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Raja Sankranti</td>
-                                            <td>Jun 15,2023</td>
-                                            <td>Thursday</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Ratha Yathra</td>
-                                            <td>Jun 20,2023</td>
-                                            <td>Tuesday</td>
-                                            <td>No</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>Bakrid / Eid ai Adha</td>
-                                            <td>Jun 29,2023</td>
-                                            <td>Thursday</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>Independence Day</td>
-                                            <td>Aug 15,2023</td>
-                                            <td>Tuesday</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>Ganesh Chaturthi</td>
-                                            <td>Sep 19,2023</td>
-                                            <td>Tuesday</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>Gandhi Jayanthi</td>
-                                            <td>Oct 2,2023</td>
-                                            <td>Monday</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>11</td>
-                                            <td>Vijaya Dashami</td>
-                                            <td>Oct 24,2023</td>
-                                            <td>Tuesday</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>12</td>
-                                            <td>Kannada Rajyothsava</td>
-                                            <td>Nov 1,2023</td>
-                                            <td>Wednesday</td>
-                                            <td>No</td>
-                                            <td>Yes</td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td>Christmas Day</td>
-                                            <td>Dec 25,2023</td>
-                                            <td>Monday</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                            <td>Yes</td>
-                                        </tr>
+                                    <tbody id="myTable">
+
                                     </tbody>
                                 </table>
                             </div>
@@ -222,13 +107,156 @@
         </div>
     </div>
 
-
-
-
+    <!-- Include jQuery and other required
+files for Bootstrap -->
+    <script src="js/jquery.js"></script>
     <script src=" js/popper.min.js">
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        // Specify the JSON data to be displayed
+        var mydata =
+            [
+                {
+                    "no": "1",
+                    "occasion": "Republic Day",
+                    "date": "Jan 26,2023",
+                    "day": "Thursday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "Yes"
+                },
+                {
+                    "no": "2",
+                    "occasion": "Ugadi",
+                    "date": "Mar 22,2023",
+                    "day": "Wednesday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "No"
+                },
+                {
+                    "no": "3",
+                    "occasion": "May Day",
+                    "date": "May 1,2023",
+                    "day": "Monday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "Yes"
+                },
+                {
+                    "no": "4",
+                    "occasion": "Telangana Formation Day",
+                    "date": "Jun 2,2023",
+                    "day": "Friday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "No",
+                    "bhubaneswar": "No"
+                },
+                {
+                    "no": "5",
+                    "occasion": "Raja Sankranti",
+                    "date": "Jun 15,2023",
+                    "day": "Thursday",
+                    "hyderabad": "No",
+                    "bengaluru": "No",
+                    "bhubaneswar": "Yes"
+                },
+                {
+                    "no": "6",
+                    "occasion": "Ratha Yathra",
+                    "date": "Jun 20,2023",
+                    "day": "Tuesday",
+                    "hyderabad": "No",
+                    "bengaluru": "No",
+                    "bhubaneswar": "Yes"
+                },
+                {
+                    "no": "7",
+                    "occasion": "Bakrid / Eid ai Adha",
+                    "date": "Jun 29,2023",
+                    "day": "Thursday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "Yes"
+                },
+                {
+                    "no": "8",
+                    "occasion": "Independence Day",
+                    "date": "Aug 15,2023",
+                    "day": "Tuesday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "Yes"
+                },
+                {
+                    "no": "9",
+                    "occasion": "Ganesh Chaturthi",
+                    "date": "Sep 19,2023",
+                    "day": "Tuesday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "Yes"
+                },
+                {
+                    "no": "10",
+                    "occasion": "Gandhi Jayanthi",
+                    "date": "Oct 2,2023",
+                    "day": "Monday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "Yes"
+                },
+                {
+                    "no": "11",
+                    "occasion": "Vijaya Dashami",
+                    "date": "Oct 24,2023",
+                    "day": "Tuesday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "Yes"
+                },
+                {
+                    "no": "12",
+                    "occasion": "Kannada Rajyothsava",
+                    "date": "Nov 1,2023",
+                    "day": "Wednesday",
+                    "hyderabad": "No",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "No"
+                },
+                {
+                    "no": "13",
+                    "occasion": "Christmas Day",
+                    "date": "Dec 25,2023",
+                    "day": "Monday",
+                    "hyderabad": "Yes",
+                    "bengaluru": "Yes",
+                    "bhubaneswar": "Yes"
+                }
+            ];
+
+        buildTable(mydata)
+
+        function buildTable(data) {
+            var table = document.getElementById('myTable');
+            for (var i = 0; i < data.length; i++) {
+                var row = `<tr>
+                                    <td> ${data[i].no}</td>
+                                    <td>${data[i].occasion}</td>
+                                    <td>${data[i].occasionDate}</td>
+                                    <td>${data[i].day}</td>
+                                    <td>${data[i].hyderabad}</td>
+                                    <td>${data[i].bengaluru}</td>
+                                    <td>${data[i].bhubaneswar}</td>
+                            </tr>`
+
+                table.innerHTML += row;
+            }
+        }
+    </script>
+
 </body>
 
 </html>

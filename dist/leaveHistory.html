@@ -78,109 +78,20 @@
                             </div>
                             <hr>
                             <div class="row table-top-margin card-3">
-                                <table class="table table-striped">
+                                <table class="table table-bordered table-striped table-hover">
                                     <thead>
                                         <tr>
-                                            <th scope="col">S.NO</th>
-                                            <th scope="col">Leave Type</th>
-                                            <th scope="col">From Date</th>
-                                            <th scope="col">To Date</th>
-                                            <th scope="col">Leave For</th>
-                                            <th scope="col">Days</th>
-                                            <th scope="col">Status</th>
+                                            <th>S.NO</th>
+                                            <th>Leave Type</th>
+                                            <th>From Date</th>
+                                            <th>To Date</th>
+                                            <th>Leave For</th>
+                                            <th>Days</th>
+                                            <th>Status</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Earned Leave</td>
-                                            <td>Feb 6,2023</td>
-                                            <td>Feb 6,2023</td>
-                                            <td>personal work</td>
-                                            <td>1</td>
-                                            <td>Approved</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Earned Leave</td>
-                                            <td>Feb 1,2023</td>
-                                            <td>Feb 1,2023</td>
-                                            <td>personal work</td>
-                                            <td>1</td>
-                                            <td>Approved</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Earned Leave</td>
-                                            <td>Jan 27,2023</td>
-                                            <td>Jan 27,2023</td>
-                                            <td>personal work</td>
-                                            <td>1</td>
-                                            <td>Approved</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Sick Leave</td>
-                                            <td>Jan 18,2023</td>
-                                            <td>Jan 18,2023</td>
-                                            <td>not feeling well</td>
-                                            <td>1</td>
-                                            <td>Approved</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Casual Leave</td>
-                                            <td>Jan 13,2023</td>
-                                            <td>Jan 16,2023</td>
-                                            <td>personal work</td>
-                                            <td>2</td>
-                                            <td>Approved</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Earned leaves</td>
-                                            <td>Dec 22,2023</td>
-                                            <td>Dec 22,2023</td>
-                                            <td>Personal Work</td>
-                                            <td>1</td>
-                                            <td>Approved</td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>Sick Leave</td>
-                                            <td>Dec 5,2023</td>
-                                            <td>Dec 5,2023</td>
-                                            <td>Not feeling well</td>
-                                            <td>1</td>
-                                            <td>Pending</td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>Casual Leave</td>
-                                            <td>Nov 10,2023</td>
-                                            <td>Nov 11,2023</td>
-                                            <td>Personal work</td>
-                                            <td>2</td>
-                                            <td>Approved</td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>Earned Leave</td>
-                                            <td>Nov 3,2023</td>
-                                            <td>Nov 3,2023</td>
-                                            <td>Personal work</td>
-                                            <td>1</td>
-                                            <td>Approved</td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>Casual Leave</td>
-                                            <td>Oct 27,2023</td>
-                                            <td>Oct 27,2023</td>
-                                            <td>Personal work</td>
-                                            <td>1</td>
-                                            <td>Approved</td>
-                                        </tr>
+                                    <tbody id="jsonDataTable">
+
                                     </tbody>
                                 </table>
                             </div>
@@ -193,11 +104,135 @@
 
 
 
-
+    <!-- Include jQuery and other required
+files for Bootstrap -->
+    <script src="js/jquery.js"></script>
     <script src=" js/popper.min.js">
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        // Specify the JSON data to be displayed
+        var mydata =
+            [
+                {
+                    "no": "1",
+                    "type": "Earned Leave",
+                    "from": "Feb 6,2023",
+                    "to": "Feb 6,2023",
+                    "leave": "personal work",
+                    "days": "1",
+                    "status": "Approved"
+                },
+                {
+                    "no": "2",
+                    "type": "Earned Leave",
+                    "from": "Feb 1,2023",
+                    "to": "Feb 1,2023",
+                    "leave": "personal work",
+                    "days": "1",
+                    "status": "Approved"
+                },
+                {
+                    "no": "3",
+                    "type": "Earned Leave",
+                    "from": "Jan 27,2023",
+                    "to": "Jan 27,2023",
+                    "leave": "personal work",
+                    "days": "1",
+                    "status": "Approved"
+                },
+                {
+                    "no": "4",
+                    "type": "Sick Leave",
+                    "from": "Jan 18,2023",
+                    "to": "Jan 18,2023",
+                    "leave": "not feeling well",
+                    "days": "1",
+                    "status": "Approved"
+                },
+                {
+                    "no": "5",
+                    "type": "Casual Leave",
+                    "from": "Jan 13,2023",
+                    "to": "Jan 16,2023",
+                    "leave": "personal work",
+                    "days": "2",
+                    "status": "Approved"
+                },
+                {
+                    "no": "6",
+                    "type": "Earned leaves",
+                    "from": "Dec 22,2023",
+                    "to": "Dec 22,2023",
+                    "leave": "Personal Work",
+                    "days": "1",
+                    "status": "Approved"
+                },
+                {
+                    "no": "7",
+                    "type": "Sick Leave",
+                    "from": "Dec 5,2023",
+                    "to": "Dec 5,2023",
+                    "leave": "Not feeling well",
+                    "days": "1",
+                    "status": "Pending"
+                },
+                {
+                    "no": "8",
+                    "type": "Casual Leave",
+                    "from": "Nov 10,2023",
+                    "to": "Nov 11,2023",
+                    "leave": "Personal work",
+                    "days": "2",
+                    "status": "Approved"
+                },
+                {
+                    "no": "9",
+                    "type": "Earned Leave",
+                    "from": "Nov 3,2023",
+                    "to": "Nov 3,2023",
+                    "leave": "Personal work",
+                    "days": "1",
+                    "status": "Approved"
+                },
+                {
+                    "no": "10",
+                    "type": "Casual Leave",
+                    "from": "Oct 27,2023",
+                    "to": "Oct 27,2023",
+                    "leave": "Personal work",
+                    "days": "1",
+                    "status": "Approved"
+                }
+            ];
+
+        buildTable(mydata)
+
+        function buildTable(data) {
+            var table = document.getElementById('jsonDataTable')
+            for (var i = 0; i < data.length; i++) {
+                var row = `<tr>
+                                        <td>${data[i].no}</td>
+                                        <td>${data[i].type}</td>
+                                        <td>${data[i].from}</td>
+                                        <td>${data[i].to}</td>
+                                        <td>${data[i].leave}</td>
+                                        <td>${data[i].days}</td>
+                                        <td>${data[i].status}</td>
+                                </tr>`
+
+                table.innerHTML += row;
+            }
+
+        }
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>
